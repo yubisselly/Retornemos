@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="Estilos/main.css" rel="stylesheet">
+    <script type="text/javascript" src="javascript/funciones.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <header id="header">
+        <div class="container">
+            <div  class="row" id="rowheader1">
+                <a id="noticiah" href="noticia.html"><img class="icon" src="imagenes/PNG/blanco-noticias-sobre.png" height=100px width=100px></a>
+                <a id="capacitacionh" href="cursos.html"><img class="icon" src="imagenes/PNG/blanco-capacitación-libro.png" height=100px width=100px></a>
+                <a id="eventoh" href="eventos.html"><img class="icon" src="imagenes/PNG/blanco-eventos-calendario.png" height=100px width=100px></a>
+                <a id="quienesh" href="quienes.html"><img class="icon" src="imagenes/PNG/blanco-quienes-somos-persona.png" height=100px width=100px></a>
+            </div>
+            <div  class="row" id="rowheader2">
+                <a id="inicioh" href="index.html"><img class="icon" src="imagenes/PNG/blanco-inicio-botella.png" height=100px width=100px></a>
+                <a id="georreferenciah" href="georreferencia.html"><img class="icon" src="imagenes/PNG/blanco-georreferenciacion-pin.png" height=100px width=100px></a> 
+                <a id="contactoh" href="contacto.html"><img class="icon" src="imagenes/PNG/blanco-contacto-medios.png" height=100px width=100px></a>
+                <a id="indicadorh" href="indicador.html"><img class="icon" src="imagenes/PNG/blanco-indicador-grafica.png" height=100px width=100px></a> 
+            </div>
+        </div>
+    </header>
+
+</head>
+<body>
+    <h2 style="text-align:center;">Formulario de Registro</h2>
+    <br>
+    <br>
+    <!-- Fila 1 -->
+    <div class="row">
+        <form class="col s12" action="codigoPHP/registro.php" method="post">
+            <div class="row">
+                <div class="input-field col s3" >
+                    <br>
+                </div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" name="nombre1" type="text" class="validate" required="required" onkeypress="return ValidarText(event, 'SoloLetras')">
+                    <label for="icon_prefix">Primer Nombre</label>
+                </div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" name="nombre2"  type="text" class="validate"  onkeypress="return ValidarText(event, 'SoloLetras')" name="nombre2" >
+                    <label for="icon_telephone">Segundo Nombre</label>
+                </div>
+               <div class="input-field col s3">
+                    <br>
+                </div>
+          </div>
+        
+    </div>
+    <!-- Fila 2 -->
+    <div class="row">
+        <form class="col s12" action="codigoPHP/registro.php" method="post">
+            <div class="row">
+                <div class="input-field col s3">
+                    <br>
+                </div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" name="apellido1" type="text" class="validate" required="required" onkeypress="return ValidarText(event, 'SoloLetras')" name="apellido1" class="validate">
+                    <label for="icon_prefix">Primer Apellido</label>
+                </div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" name="apellido2" type="text" class="validate"  onkeypress="return ValidarText(event, 'SoloLetras')" name="apellido2" >
+                    <label for="icon_telephone">Segundo Apellido</label>
+                </div>
+                <div class="input-field col s3">
+                    <br>
+                </div>
+          </div>
+        
+    </div>
+ <!-- Fila 3 -->
+    <div class="row">
+        <form class="col s12" action="codigoPHP/registro.php" method="post">
+            <div class="row">
+                <div class="input-field col s3">
+                    <br>
+                </div>
+                <div class="input-field col s3"> 
+                    <select id="rol" name="tipo" class="browser-default">
+                      <option value="" disabled selected>Seleccione tipo de documento</option>
+                      <option value="1">T.I</option>
+                      <option value="2">C.C</option>
+                      <option value="3">Pasaporte</option>
+                      <option value="5">Cedula de Extrangeria</option>
+                    </select>
+                </div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input name="idusuario" id="icon_prefix" type="text" required="required" onkeypress="return ValidarText(event, 'SoloNumeros')" class="validate">
+                    <label for="icon_telephone">Documento de Identidad</label>
+                </div>
+                <div class="input-field col s3">
+                    <br>
+                </div>
+          </div>
+        
+    </div>
+     <!-- Fila 4 -->
+     <div class="row">
+        <form class="col s12" action="codigoPHP/registro.php" method="post">
+            <div class="row">
+                <div class="input-field col s3">
+                    <br>
+                </div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">contact_phone</i>
+                    <input name="telefono" id="icon_prefix" type="text" class="validate" required="required" onkeypress="return ValidarText(event, 'SoloNumeros')">
+                    <label for="icon_prefix">Telefono</label>
+                </div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">email</i>
+                    <input name="correo" id="icon_prefix" type="email" class="validate" required="required" onkeypress="return ValidarText(event, 'NumerosyLetras')">
+                    <label for="icon_telephone">Correo Institucional</label>
+                </div>
+                <div class="input-field col s3">
+                    <br>
+                </div>
+          </div>
+        
+    </div>
+     <!-- Fila 5 -->
+     <div class="row">
+        <form class="col s12" action="codigoPHP/registro.php" method="post">
+            <div class="row">
+                <div class="input-field col s3">
+                    <br>
+                </div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">person_pin_circle</i>
+                    <input name="direccion" id="icon_prefix" type="text" class="validate" required="required" onkeypress="return ValidarText(event, 'NumerosyLetras')" class="validate">
+                    <label for="icon_prefix">Dirección</label>
+                </div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">comment</i>
+                    <input name="complemento" id="icon_prefix" type="text" class="validate"  onkeypress="return ValidarText(event, 'NumerosyLetras')" >
+                    <label for="icon_telephone">Complemento</label>
+                </div>
+                <div class="input-field col s3">
+                    <br>
+                </div>
+          </div>
+        
+    </div>
+     <!-- Fila 6 -->
+     <div class="row">
+        <form class="col s12" action="codigoPHP/registro.php" method="post">
+            <div class="row">
+                <div class="input-field col s3">
+                    <br>
+                </div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">visibility_off</i>
+                    <input name="contrasena" id="icon_prefix" class="validate" required="required" onkeypress="return ValidarText(event, 'SoloLetras')" type="password" class="validate">
+                    <label for="icon_prefix">Contraseña</label>
+                </div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">visibility_off</i>
+                    <input name="vcontrasena"   id="icon_prefix" class="validate" required="required" onkeypress="return ValidarText(event, 'SoloLetras')"   type="password">
+                    <label for="icon_telephone">Verificar Contraseña</label>
+                </div>
+                <div class="input-field col s3">
+                    <br>
+                </div>
+          </div>
+        
+    </div>
+    <!-- Fila 7 -->
+    <div class="row">
+        <form class="col s12" action="codigoPHP/registro.php" method="post">
+            <div class="row">
+                <div class="input-field col s3">
+                </div>
+                <div class="input-field col s3">
+                    <label>Seleccione Su Rol</label>
+                    <br><br>
+                    <select id="rol" name="rol" class="browser-default">
+                      <option value="" disabled selected>Seleccione una opción</option>
+                      <option value="1">Aprendiz</option>
+                      <option value="2">Instructor</option>
+                      <option value="3">Administrativo</option>
+                    </select>
+                </div>
+                <div class="input-field col s3">
+                    <label>Seleccione Su Centro Formativo</label>
+                    <br><br>
+                    <select id="cformativo" name="centroformativo" class="browser-default">
+                      <option value="" disabled selected>Seleccione una opción</option>
+                      <option value="001-1">CTGI</option>
+                      <option value="001-2">CTMA</option>
+                      <option value="001-3">CTHC</option>
+                    </select>
+                </div>
+                <div class="input-field col s3">
+                   
+                </div>
+          </div>
+        </div>
+    <!--Boton de Registrarse-->
+    <div class="container-fluid">       
+            <a><button id="btregistrarse"  class="btn waves-effect waves-light" type="submit" name="action">Registrarse
+            <i class="material-icons right">send</i>
+            </button></a>
+        </form>
+    </form>
+</form>
+</form>
+</form>
+</form>
+</form>
+        </div>
+     </div>
+   
+</body>
+<footer id="foot">
+    <div class="container-fluid">
+
+        <p style="color: white; font-size: 15px;">
+            <br>
+                Servicio Nacional de Aprendizaje SENA <br>
+                Nombre Centro Textil y De Gestion Industrial <br>
+                Telefonos (+57 4) 444 28 00 Ext 43345 Servicio Al Cliente <br>
+                Horario Atención: lunes a viernes 7:00 a.m. a 12:00 m. 1:00 pm a 5:00 pm <br>
+                Dirección: calle 104 N* 67-120 <br>
+                Barrio Pedregal, Medellín <br>
+        </p>
+        <p style="color: white;font-size: 15px;">Copyright &copy; 2022 - All Rights Reserved developed by Francisco
+                 Francisco Serna,
+                 Dany Sánchez & Yubisselly Nieto</p>
+    </div>
+</footer>
+</html>

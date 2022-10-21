@@ -1,0 +1,274 @@
+
+#noticiah:visited{
+  opacity: 100%;
+}
+#noticiah:hover{
+  opacity: 50%;
+}
+
+#capacitacionh:visited{
+  opacity: 100%;
+}
+#capacitacionh:hover{
+  opacity: 50%;
+}
+
+#indicadorh:visited{
+  opacity: 100%;
+}
+#indicadorh:hover{
+  opacity: 50%;
+}
+
+#georreferenciah:visited{
+  opacity: 100%;
+}
+#georreferenciah:hover{
+  opacity: 50%;
+}
+
+#eventoh:visited{
+  opacity: 100%;
+}
+#eventoh:hover{
+  opacity: 50%;
+}
+
+#contactoh:visited{
+  opacity: 100%;
+}
+#contactoh:hover{
+  opacity: 50%;
+}
+
+#quienesh:visited{
+  opacity: 100%;
+}
+#quienesh:hover{
+  opacity: 50%;
+}
+
+#inicioh:visited{
+  opacity: 100%;
+}
+#inicioh:hover{
+  opacity: 50%;
+}
+
+#icon{
+  display: block;
+  margin: 50px auto;
+  width: 40px;
+  padding: 20px;
+}
+
+#foot{
+  background-color: #FC7323;
+}
+  
+#busqueda{
+  margin-top: 500px;
+  margin-left: 120px;
+}
+.border{
+  border: 10px, solid, black;
+}
+
+#noticiai{
+  margin-top:20px;
+}
+#noticiai:visited{
+  opacity: 100%;
+}
+#noticiai:hover{
+  opacity: 50%;
+}
+
+#capacitacioni{
+  margin-right:200PX;
+  margin-top: 50px;
+}
+#capacitacioni:visited{
+  opacity: 100%;
+}
+#capacitacioni:hover{
+  opacity: 50%;
+}
+
+#indicadori{
+  margin-right:100PX;
+  margin-top: 50px;
+}
+
+#indicadori:visited{
+  opacity: 100%;
+}
+#indicadori:hover{
+  opacity: 50%;
+}
+
+#geoi{
+  margin-left:200PX;
+  margin-top: 50px;
+}
+#geoi:visited{
+  opacity: 100%;
+}
+#geoi:hover{
+  opacity: 50%;
+}
+
+#eventosi{
+  margin: 0;
+}
+#eventosi:visited{
+  opacity: 100%;
+}
+#eventosi:hover{
+  opacity: 50%;
+}
+
+#contactoi{
+  margin-left:100PX;
+  margin-top: 50px;
+}
+#contactoi:visited{
+  opacity: 100%;
+}
+#contactoi:hover{
+  opacity: 50%;
+}
+
+#quienesi{
+  margin: 0;
+}
+#quienesi:visited{
+  opacity: 100%;
+}
+#quienesi:hover{
+  opacity: 50%;
+}
+
+#inicioi{
+  margin: 0;
+}
+#inicioi:visited{
+  opacity: 100%;
+}
+#inicioi:hover{
+  opacity: 50%;
+}
+
+#columna{
+  height:100px; 
+  width:100px;
+}
+#a{
+  height:40px;
+  width: 150px;
+}
+#rowheader1
+{
+  padding-top: 2rem;
+  
+}
+
+#rowheader2
+{
+  padding-bottom: 4rem;
+  position: relative;
+  
+}
+
+#capacitacionh
+{
+  padding-left: 8rem;
+  
+}
+#inicioh
+{
+  padding-left: 8rem;
+  position: absolute;
+  right: 0px;
+  top: -80px;
+  left: 770px;
+  width: 200px;
+  bottom: 40px;
+  padding: 10px;
+ 
+
+}
+
+#georreferenciah
+{
+  padding-left: 8rem;
+  position: absolute;
+  top: -90px;
+  right: 0px;
+  left: 90px;
+  width: 200px;
+  bottom: 40px;
+  padding: 20px;
+  
+}
+#eventoh
+{
+  padding-left: 8rem;
+  
+}
+#contactoh
+{
+  padding-left: 8rem;
+  position: absolute;
+  right: 0px;
+  top: -90px;
+  left: 315px;
+  width: 200px;
+  bottom: 40px;
+  padding: 20px;
+  
+}
+
+#quienesh
+{
+  padding-left: 8rem;
+  
+}
+
+#indicadorh
+{
+  padding-left: 8rem;
+  position: absolute;
+  right: 0px;
+  top: -90px;
+  left: 540px;
+  width: 200px;
+  bottom: 40px;
+  padding: 20px;
+}
+
+#test{
+  background-image: url('../Imagenes/trees.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header{
+  background-image: url('../Imagenes/pasto.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#logo{
+    
+  width: 25rem;
+  height: 20rem;
+}
+
+#buscari{
+  margin-top: 80px;
+}

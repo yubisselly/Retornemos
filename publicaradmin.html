@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link href="Estilos/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <header id="header">
+            <div class="container">
+                <div  class="row" id="rowheader1">
+                    <a id="noticiah" href="noticia.html"><img class="icon" src="imagenes/PNG/blanco-noticias-sobre.png" height=100px width=100px></a>
+                    <a id="capacitacionh" href="cursos.html"><img class="icon" src="imagenes/PNG/blanco-capacitación-libro.png" height=100px width=100px></a>
+                    <a id="eventoh" href="eventos.html"><img class="icon" src="imagenes/PNG/blanco-eventos-calendario.png" height=100px width=100px></a>
+                    <a id="quienesh" href="quienes.html"><img class="icon" src="imagenes/PNG/blanco-quienes-somos-persona.png" height=100px width=100px></a>
+                </div>
+                <div  class="row" id="rowheader2">
+                    <a id="inicioh" href="index.html"><img class="icon" src="imagenes/PNG/blanco-inicio-botella.png" height=100px width=100px></a>
+                    <a id="georreferenciah" href="georreferencia.html"><img class="icon" src="imagenes/PNG/blanco-georreferenciacion-pin.png" height=100px width=100px></a> 
+                    <a id="contactoh" href="contacto.html"><img class="icon" src="imagenes/PNG/blanco-contacto-medios.png" height=100px width=100px></a>
+                    <a id="indicadorh" href="indicador.html"><img class="icon" src="imagenes/PNG/blanco-indicador-grafica.png" height=100px width=100px></a> 
+                </div>
+            </div>
+        </header>
+
+</head>
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <h2 style="text-align:center;">Ingresar publicación</h2>
+    <br><br>
+
+      
+
+
+    <!--Primera Fila-->
+       <div class="container-fluid">
+            <div class="row">
+                <div class="col s4"></div>
+                <div class="col s4">
+                    <form>
+                        <label>Tipo de Publicación</label>
+                        <select class="browser-default" name="ingresar">
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="1" class="left">Georreferenciación</option>
+                        <option value="2">Noticias</option>
+                        <option value="3">Informes e Indicadores</option>
+                        <option value="4">Evento Institucional</option>
+                        </select>
+                    <div class="col s4"></div>
+                    <br>
+                    <label for="apublicacion">Seleccione el archivo</label><br>
+                    <input type="file" id="apublicacion" name="apublicacion"><br>
+                    <div class="input-field col s12">
+                    <i class="material-icons prefix">drive_file_rename_outline</i>
+                    <input id="icon_prefix" name="npublicacion" type="text" class="validate">
+                    <label for="icon_prefix">Nombre de la publicación</label> </div>
+                    <div class="input-field col s12">
+                    <i class="material-icons prefix">description</i>
+                    <input id="icon_prefix" name="dpublicacion" type="text" class="validate">
+                    <label for="icon_prefix">Descripción</label></div>
+                    <div class="input-field col s12">
+                    <i class="material-icons prefix">calendar_month</i>
+                    <input type="date" name="fpublicacion"></div>
+                    <button id="bpublicar" class="btn waves-effect waves-light" type="submit" name="action">Publicar
+                        <i class="material-icons right">check</i>
+                    </button>
+                </form>
+             </div>   
+            </div>
+            <div class="row">
+                <div class="col s4"></div>
+                <div class="col s4">
+                <form>
+                    <br>  
+                </form>
+                <div class="col s4"></div>
+            </div>
+            </div>
+        </div>
+       
+    </div>               
+<footer id="foot">
+    <div class="container-fluid">
+
+        <p style="color: white; font-size: 15px;">
+            <br>
+            Servicio Nacional de Aprendizaje SENA <br>
+            Nombre Centro Textil y De Gestion Industrial <br>
+            Telefonos (+57 4) 444 28 00 Ext 43345 Servicio Al Cliente <br>
+            Horario Atención: lunes a viernes 7:00 a.m. a 12:00 m. 1:00 pm a 5:00 pm <br>
+            Dirección: calle 104 N* 67-120 <br>
+            Barrio Pedregal, Medellín <br>
+        </p>
+        <p style="color: white;font-size: 15px;">Copyright &copy; 2022 - All Rights Reserved developed by Francisco
+            Serna, Dany Sánchez & Yubisselly Nieto</p>
+    </div>
+</footer>
+</body>
+</html>
+    
